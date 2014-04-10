@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CW Creations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="/css/product-item.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Wrap all page content here -->
+    <script type="text/x-handlebars">
+      <div id="wrap">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CW Creations</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+              <li>
+                {{#link-to 'index' tagName='li'}}
+                  <a {{bindAttr href='index'}}>Home</a>
+                {{/link-to}}
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jewelry <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>{{#link-to 'grid'}}Pendants (7){{/link-to}}</li>
+                  <li>{{#link-to 'grid'}}Bracelets (22){{/link-to}}</li>
+                  <li>{{#link-to 'grid'}}Earings (3){{/link-to}}</li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paper Crafts <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>{{#link-to 'grid'}}Cards (34){{/link-to}}</li>
+                  <li>{{#link-to 'grid'}}Stampings (14){{/link-to}}</li>
+                </ul>
+              </li>
+              <li>
+                {{#link-to 'about' tagName='li'}}
+                  <a {{bindAttr href='about'}}>About</a>
+                {{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'contact' tagName='li'}}
+                  <a {{bindAttr href='contact'}}>Contact</a>
+                {{/link-to}}
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </nav>
+
+        <!-- Begin page content -->
+        {{outlet}}
+      </div>
+      <div id="footer">
+        <div class="container">
+          <p class="text-muted credit pull-right">
+            Website created by <a href="https://twitter.com/SpuriousTuple">a loving fiance </a>
+          </p>
+        </div>
+      </div>
+    </script>
+
+    <!-- TODO: figure out how to move these into separate files and compile them -->
+    <script type="text/x-handlebars" id="index">
+      <div class="container">
+    <div class="row">
+      <h3>Custom Handmade Creations</h3>
+    </div>
+
+    <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-9">
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BCB.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BCMBracelet260.png')">
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BlackGreyBraidedBracelet260.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <div class="section">
+                <h4>More info:</h4>
+                <p>Here's some more info</p>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BlueYellowBCB260.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/Coasters.png')">
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/CSCPendant260.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <div class="section">
+                <h4>More info:</h4>
+                <p>Here's some more info</p>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BlackGreyBraidedBracelet260.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/Coasters.png')">
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BCB.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <div class="section">
+                <h4>More info:</h4>
+                <p>Here's some more info</p>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/CSCPendant260.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BlueYellowBCB260.png')">
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <!--<div class="section">
+                  <h4>Sizes</h4>
+                  <p>40,41,42,43,44,45</p>
+              </div>-->
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <div class="item" style="background-image: url('/img/inventory/BCMBracelet260.png')">
+        <div class="item-overlay">
+          <div class="sale-tag"><span>SALE</span></div>
+        </div>
+        <div class="item-content">
+          <div class="item-top-content">
+            <div class="item-top-content-inner">
+              <div class="item-product">
+                <div class="item-top-title">
+                  <h2>Braided Bracelet</h2>
+                  <p class="subdescription">
+                    Black & Grey
+                  </p>
+                </div>
+              </div>
+              <div class="item-product-price">
+                <span class="price-num">$17</span>
+                <p class="subdescription">$36</p>
+                <div class="old-price"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item-add-content">
+            <div class="item-add-content-inner">
+              <div class="section">
+                <h4>More info:</h4>
+                <p>Here's some more info</p>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">More photos</a>
+              </div>
+              <div class="section">
+                <a href="#" class="btn buy expand">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-6 col-sm-2 col-md-4 col-lg-3">
+      <p class="lead">
+        Hello! I'm Corinne, and I've been making handmade jewelry since I was a kid.
+      </p>
+      <p class="lead">
+        I have a great passion for handmade jewelry and paper crafts.
+      </p>
+      <p class="lead">
+        Please bear with me while my awesome fiance finishes building my website. Once it's finished I'll be able to take your orders and create a custom item specially for you!
+      </p>
+      <!--
+      <p class="lead">
+        Please take a moment to browse through my inventory. If you don't see anything that doesn't quite match what you're looking for <a href="#">drop me a message,</a> and I'll glady make a piece specially for you!
+      </p>
+      -->
+      <p>Thanks for visiting!</p>
+    </div>
+    </div>
+    </div>
+    </script>
+
+    <script type="text/x-handlebars" id="grid">
+      <div class="container">
+
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BCB.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BCMBracelet260.png')">
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BlackGreyBraidedBracelet260.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <div class="section">
+                  <h4>More info:</h4>
+                  <p>Here's some more info</p>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BlueYellowBCB260.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/Coasters.png')">
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/CSCPendant260.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <div class="section">
+                  <h4>More info:</h4>
+                  <p>Here's some more info</p>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BlackGreyBraidedBracelet260.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/Coasters.png')">
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BCB.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <div class="section">
+                  <h4>More info:</h4>
+                  <p>Here's some more info</p>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/CSCPendant260.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BlueYellowBCB260.png')">
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <!--<div class="section">
+                    <h4>Sizes</h4>
+                    <p>40,41,42,43,44,45</p>
+                </div>-->
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-item">
+        <div class="item" style="background-image: url('/img/inventory/BCMBracelet260.png')">
+          <div class="item-overlay">
+            <div class="sale-tag"><span>SALE</span></div>
+          </div>
+          <div class="item-content">
+            <div class="item-top-content">
+              <div class="item-top-content-inner">
+                <div class="item-product">
+                  <div class="item-top-title">
+                    <h2>Braided Bracelet</h2>
+                    <p class="subdescription">
+                      Black & Grey
+                    </p>
+                  </div>
+                </div>
+                <div class="item-product-price">
+                  <span class="price-num">$17</span>
+                  <p class="subdescription">$36</p>
+                  <div class="old-price"></div>
+                </div>
+              </div>
+            </div>
+            <div class="item-add-content">
+              <div class="item-add-content-inner">
+                <div class="section">
+                  <h4>More info:</h4>
+                  <p>Here's some more info</p>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">More photos</a>
+                </div>
+                <div class="section">
+                  <a href="#" class="btn buy expand">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" id="about">
+      <div class="container">
+        <div class="row">
+          <p class="lead">
+            <br/>
+            Hello! I'm Corinne, and I've been making handmade jewelry since I was a kid.
+          </p>
+          <p class="lead">
+            I have a great passion for handmade jewelry and paper crafts.
+          </p>
+          <p class="lead">
+            Please bear with me while my awesome fiance finishes building my website. Once it's finished I'll be able to take your orders and create a custom item specially for you!
+          </p>
+          <!--
+          <p class="lead">
+            Please take a moment to browse through my inventory. If you don't see anything that doesn't quite match what you're looking for <a href="#">drop me a message,</a> and I'll glady make a piece specially for you!
+          </p>
+          -->
+          <p>Thanks for visiting!</p>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" id="contact">
+      <div class="container">
+        <p class="lead">
+          <br/>
+          Want something custom made? Let me know what you'd like and I'll get back to you! I promise not to spam you ;)
+        </p>
+        <form class="form-horizontal" role="form">
+          <br/>
+          <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputDescription" class="col-sm-2 control-label">What would you like?</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="10" id="inputDescription"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </script>
+
+    <script src="/js/libs/jquery-2.0.3.js"></script>
+    <script src="/js/libs/handlebars-1.1.2.js"></script>
+    <script src="/js/libs/ember-1.2.0.js"></script>
+    <script src="/js/libs/bootstrap.js"></script>
+    <script src="/js/app.js"></script>
+
+    <script>
+      //TODO: fix this, it won't work this way
+      //  this must be set after Ember/Handlbars renders the template
+      $(document).ready(function() {
+        //fix active node in menu
+        //$("a.active").parent().addClass("active");
+      })
+    </script>
+  </body>
+</html>
